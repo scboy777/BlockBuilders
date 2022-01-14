@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "InstantiateMsg",
+  "type": "object",
+  "required": [
+    "collection_name",
+    "collection_symbol",
+    "mint_cap",
+    "nft_contract_addr",
+    "uluna_price"
+  ],
+  "properties": {
+    "collection_name": {
+      "type": "string"
+    },
+    "collection_symbol": {
+      "type": "string"
+    },
+    "mint_cap": {
+      "type": "integer",
+      "format": "uint64",
+      "minimum": 0.0
+    },
+    "nft_contract_addr": {
+      "type": "string"
+    },
+    "uluna_price": {
+      "type": "integer",
+      "format": "uint128",
+      "minimum": 0.0
+    }
+  }
+}
